@@ -5,8 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFDemoProject"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" MinHeight="450" MinWidth="800">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="20" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="20" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" />
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="20" />
+        </Grid.RowDefinitions>
+        <TextBlock Text="This is my first WPF application" Margin="5" Grid.ColumnSpan="2" Grid.Row="1" Grid.Column="1" FontSize="20" FontFamily="Ariel" FontStyle="Italic" />
+        <TextBlock Text="Enter first name" Grid.Column="1" Grid.Row="2"/>
+        <TextBox Grid.Column="2" Grid.Row="2" Width="100" Name="tbxFirstName" />
+        <Button Content="Click here" Name="btnClickHere" Grid.Column="1" Grid.Row="3" Click="btnClickHere_Click"/>
     </Grid>
 </Window>
