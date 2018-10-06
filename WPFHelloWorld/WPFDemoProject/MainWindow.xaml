@@ -37,7 +37,27 @@
         </ComboBox>
 
         <Button Content="Click here" Name="btnClickHere" Grid.Column="1" Grid.Row="4" Click="btnClickHere_Click"/>
-        
-        
+
+        <!--<Image Grid.Column="4" Grid.Row="1" Grid.RowSpan="6" Source="C:\Users\Ian\Pictures\planets.jpg" />-->
+
+        <!--<MediaElement Grid.Column="4" Grid.Row="1" Grid.RowSpan="6" Source="C:\Users\Ian\Videos\tut1_php_tag_scott.mp4" />-->
+
+        <ScrollViewer Grid.Column="4" Grid.Row="1" Grid.RowSpan="6" >
+            <StackPanel>
+                <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\laptop.jpg" MaxHeight="200" MaxWidth="200" />
+                <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\callcentre.jpg" MaxHeight="200" MaxWidth="200" />
+                <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\startup.jpg" MaxHeight="200" MaxWidth="200" />
+                <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\paper.jpg" MaxHeight="200" MaxWidth="200" />
+            </StackPanel>
+        </ScrollViewer>
+     
+        <!--<WrapPanel Orientation="Vertical" Grid.Column="4" Grid.Row="1" Grid.RowSpan="6" >
+            <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\laptop.jpg" MaxHeight="200" MaxWidth="200" />
+            <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\callcentre.jpg" MaxHeight="200" MaxWidth="200" />
+            <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\startup.jpg" MaxHeight="200" MaxWidth="200" />
+            <Image Source="C:\Users\Ian\Documents\Letterkenny Institute of Technology\demofiles\images\paper.jpg" MaxHeight="200" MaxWidth="200" />
+        </WrapPanel>-->
+
+
     </Grid>
 </Window>
