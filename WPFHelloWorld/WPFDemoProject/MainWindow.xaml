@@ -27,10 +27,17 @@
         <TextBlock Text="This is my first WPF application" Margin="5" Grid.ColumnSpan="2" TextDecorations="underline"  Grid.Row="1" Grid.Column="1" FontSize="20" FontFamily="Ariel" FontStyle="Italic" />
         <TextBlock Text="Enter first name" Grid.Column="1" Grid.Row="2"/>
         <TextBox Grid.Column="2" Grid.Row="2" Width="100" Name="tbxFirstName" />
-        <Button Content="Click here" Name="btnClickHere" Grid.Column="1" Grid.Row="3" Click="btnClickHere_Click"/>
-
-        <ComboBox Name="cboStudentNames" Grid.Column="1" Grid.Row="4" Grid.ColumnSpan="2" >
-            
+        
+        <ComboBox Name="cboStudentNames" Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" >
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding FullName}"></TextBlock> <!--will enable names of users to be seen. Note that FirstName (in the Binding) will not automatically appear in the intellisense.-->
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
         </ComboBox>
+
+        <Button Content="Click here" Name="btnClickHere" Grid.Column="1" Grid.Row="4" Click="btnClickHere_Click"/>
+        
+        
     </Grid>
 </Window>
